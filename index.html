@@ -12,6 +12,9 @@
 </head>
 
 <body>
+    <div class="background">
+
+    </div>
     <div class="container-fluid _title-container">
         <div class="row">
             <div class="col-2">
@@ -33,8 +36,23 @@
 
 
 
+    <script>
+        const scene = document.querySelector('.background');
+        const parallaxInstance = new Parallax(scene);
+
+        document.addEventListener('mousemove', (event) => {
+            const x = (event.clientX / window.innerWidth) * 100;
+            const y = (event.clientY / window.innerHeight) * 100;
+            scene.style.transform = `translate(-${x}%, -${y}%)`;
+        });
+    </script>
+
     <!-- js -->
     <script src="js/bootstrap.bundle.min.js"></script>
+    
+    <!-- parallax -->
+
+    <script src="js/parallax.min.js"></script>
 
 </body>
 

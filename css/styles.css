@@ -1,0 +1,10 @@
+
+body { 
+    margin: 0; overflow: hidden; 
+}
+.background {
+    position: absolute; 
+    width: 200%; 
+    height: 200%;
+    background: url('../images/Background.jpg') no-repeat center center fixed;
+}
