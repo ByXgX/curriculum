@@ -1,50 +1,77 @@
-html, body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
+
+.navbar-brand {
+  letter-spacing: 3px;
+  color: #c24244;
 }
 
-figure {
-  border-radius: 15px;
-  text-align: center;
-  width: 100%; /* Adjust width to fit within the column */
-  max-width: 300px;
-  display: grid;
-  border-radius: 1rem;
+.navbar-brand:hover {
+	color: #c24244;
+}
+
+.navbar-scroll .nav-link,
+.navbar-scroll .fa-bars {
+  color: #7f4722;
+}
+
+.navbar-scrolled .nav-link,
+.navbar-scrolled .fa-bars {
+  color: #7f4722;
+}
+
+.navbar-scrolled {
+  background-color: #ffede7;
+}
+
+header {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
   overflow: hidden;
 }
-figure > * {
-  grid-area: 1/1;
-  transition: .4s;
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
 }
-figure figcaption {
-  display: grid;
-  align-items: end;
-  font-family: sans-serif;
-  font-size: 2.3rem;
-  font-weight: bold;
-  padding: .75rem;
-  background: var(--c,#0009);
-  clip-path: inset(0 var(--_i,100%) 0 0);
- color: rgba(255, 255, 255, 0.84);
-  margin: -1px;
+
+header .container {
+  position: relative;
+  z-index: 2;
 }
-figure:hover figcaption{
-  --_i: 0%;
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
 }
-@supports not (-webkit-mask-clip: text) {
-  figure figcaption {
-   -webkit-mask: none;
-   color: #fff;
+
+/* Media Query for devices withi coarse pointers and no hover functionality */
+
+/* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+  }
+
+  header video {
+    display: none;
   }
 }
-
-body {
-  margin: 0;
-  min-height: 100vh;
-  display: grid;
-  grid-auto-flow: column;
-  place-content: center;
-  background: #425a52;
-}
-
