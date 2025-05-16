@@ -130,3 +130,31 @@ header .overlay {
   transform: translateY(-5px); /* Eleva la tarjeta 5 píxeles hacia arriba */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25); /* Sombra más pronunciada */
 }
+.carousel-inner {
+  border-radius: 10px; /* Esquinas redondeadas del contenedor de las imágenes */
+  overflow: hidden; /* Asegura que las imágenes redondeadas se mantengan dentro */
+}
+
+.carousel-item img {
+  object-fit: cover; /* Cubre el contenedor sin deformar la imagen (puede recortar) */
+  height: 400px; /* Altura fija del carrusel */
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente para el texto */
+  padding: 1rem;
+  bottom: 0; /* Pegado a la parte inferior */
+  left: 0; /* Pegado a la izquierda */
+  right: 0; /* Pegado a la derecha */
+  text-align: left; /* Texto alineado a la izquierda */
+}
+
+.carousel-caption h5 {
+  margin-top: 0; /* Elimina el margen superior predeterminado del h5 */
+}
+
+.carousel-indicators {
+  bottom: 10px; /* Ajusta la posición de los indicadores */
+  justify-content: left; /* Alinea los indicadores a la izquierda */
+  margin-left: 1rem; /* Añade un margen izquierdo */
+}
