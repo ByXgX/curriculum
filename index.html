@@ -82,7 +82,7 @@
           <div class="d-flex h-100 text-center align-items-center">
             <div class="w-100 text-white">
               <h1 class="display-3">Guillermo Palmero Fiz</h1>
-              <p class="lead mb-0">Full-Stack & videogame programmer</p>
+              <p class="lead mb-0">Full-Stack & videogame developer</p>
             </div>
           </div>
         </div>
@@ -268,60 +268,88 @@
       <!-- proyectos -->
 
       <div class="container mt-5">
-        <h2>My Proyects</h2>
+        <h2 class="myProyects-title">My Projects</h2><hr class="custom-divider mb-4">
         <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel">
-          <!-- proycto -->
           <div class="carousel-inner rounded">
-            <div class="carousel-item active bg-dark text-white"> <img src="ruta/a/imagen-proyecto1.jpg" class="d-block w-100 object-fit-cover" alt="Proyecto 1" style="height: 400px;">
-             <div class="carousel-caption d-none d-md-block text-start p-4"> <small class="text-uppercase">Web Design</small> <h5 class="mt-0">Working Spaces for Startups</h5> <p>Freelancer</p> <a href="#" class="btn btn-primary btn-sm">Ver Proyecto</a>
-             </div>
+            <div class="carousel-item active bg-dark text-white">
+              <img src="images/RoonvaRun.png" class="d-block w-100 object-fit-cover" alt="Proyecto 1">
+              <div class="carousel-caption d-none d-md-block text-start p-4">
+                <div class="carousel-caption d-none d-md-block text-start p-4">
+                  <h5 class="mt-0">Roonva Run</h5>
+                  <div class="project-tags mb-3"> <span class="project-tag tag-unity">Unity Game</span>
+                    <span class="project-tag tag-freelancer">Freelancer</span>
+                  </div>
+                  <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#projectModal1">Ver Proyecto</button>
+                </div>
+              </div>
             </div>
-          </div>
+            
+            <div class="carousel-item bg-dark text-white">
+              <img src="images/OtroJuego.png" class="d-block w-100 object-fit-cover" alt="Otro Juego">
+              <div class="carousel-caption d-none d-md-block text-start p-4">
+                <h5 class="mt-0">ArtStation</h5> 
+                <div class="project-tags mb-3">
+                  <span class="project-tag tag-unity">Maya 3D</span>
+                </div>
+                <a href="https://www.artstation.com/guilleeee"><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal">Watch</button></a>
+              </div>
+            </div>
 
+            <div class="carousel-item bg-dark text-white">
+              <img src="images/OtroJuego.png" class="d-block w-100 object-fit-cover" alt="Otro Juego">
+              <div class="carousel-caption d-none d-md-block text-start p-4">
+                <h5 class="mt-0">Space Invaders Clone</h5> 
+                <div class="project-tags mb-3">
+                  <span class="project-tag tag-unity">Unity 2D</span> <span class="project-tag tag-csharp">C#</span>
+                </div>
+                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#projectModal2"> Ver Proyecto</button>
+              </div>
+            </div>
+            
+          </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Anterior</span>
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
           </button>
           <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Siguiente</span>
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
           </button>
-          <div class="carousel-indicators"> <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            </div>
+          <div class="carousel-indicators">
+              <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+          </div>
         </div>
-      </div>
 
       <!-- hobbies  -->
-      <div class="container-fluid">
+      <div class="container-fluid mt-4">
         <div class="row hobbies-section">
             <div class="col-md-3 hobby-item">
                 <span class="hobby-icon">🃏</span>
-                <p class="hobby-text-title">Magia</p>
+                <p class="hobby-text-title">Magic</p>
                 <p class="hobby-text-description">Disfruto creando ilusiones y sorprendiendo a la gente.</p>
             </div>
             <div class="col-md-3 hobby-item">
                 <span class="hobby-icon">🥊</span>
-                <p class="hobby-text-title">Boxeo</p>
+                <p class="hobby-text-title">Boxing</p>
                 <p class="hobby-text-description">Me ayuda a mantenerme en forma física y mentalmente.</p>
             </div>
             <div class="col-md-3 hobby-item">
                 <span class="hobby-icon">✈️</span>
-                <p class="hobby-text-title">Viajes</p>
+                <p class="hobby-text-title">Trips</p>
                 <p class="hobby-text-description">Explorar nuevos lugares y culturas es fascinante.</p>
             </div>
             <div class="col-md-3 hobby-item">
                 <span class="hobby-icon">🎮</span>
-                <p class="hobby-text-title">Videojuegos</p>
+                <p class="hobby-text-title">Videogames</p>
                 <p class="hobby-text-description">Me relaja y me permite vivir aventuras virtuales.</p>
             </div>
         </div>
     </div>
 
-
-
-
     <!--  footer -->
-
     <footer class="text-center bg-body-tertiary">
       <!-- Grid container -->
       <div class="container pt-4">
@@ -398,7 +426,65 @@
     </footer>
 
 
-    
+    <!-- Proyectos flotantes -->
+
+    <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModal1Label" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="projectModal1Label">Roonva Run</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p></p>
+            <p><strong>Roles:</strong> 3D model, Programmer, .</p>
+            <p><strong>Características:</strong> Búsqueda avanzada, filtros por ubicación y servicios, sistema de reservas, perfil de usuario, integración con mapas.</p>
+            <h6>Tecnologías Utilizadas:</h6>
+            <span class="badge bg-primary me-1">Unity</span>
+            <span class="badge bg-primary me-1">Maya</span>
+            <span class="badge bg-primary me-1">Substance</span>
+            <span class="badge bg-primary me-1">Photoshop</span>
+            <hr>
+            <p>
+              <a href="URL_DEL_PROYECTO_EN_VIVO" target="_blank" class="btn btn-outline-primary me-2"><i class="fas fa-external-link-alt"></i> Ver en Vivo</a>
+              <a href="URL_DEL_REPOSITORIO_GITHUB" target="_blank" class="btn btn-outline-dark"><i class="fab fa-github"></i> Código Fuente</a>
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="projectModal2Label" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="projectModal2Label">Fantasy RPG Prototype</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Desarrollo de un prototipo de juego RPG de fantasía en 3D. Este proyecto se centró en la implementación de mecánicas de combate por turnos, sistema de inventario, navegación de personajes y un entorno interactivo.</p>
+            <p><strong>Tecnologías Clave:</strong> Desarrollo en **Unity 3D** utilizando scripts en **C#** para toda la lógica del juego. Se utilizó **Blender** para el modelado 3D de personajes y entornos, y **Photoshop** para las texturas.</p>
+            <p><strong>Características:</strong> Combate por turnos, sistema de habilidades y equipamiento, inteligencia artificial básica para enemigos, sistema de guardado/carga de partida.</p>
+            <h6>Tecnologías Utilizadas:</h6>
+            <span class="badge bg-success me-1">Unity 3D</span>
+            <span class="badge bg-info me-1">C#</span>
+            <span class="badge bg-secondary me-1">Blender</span>
+            <span class="badge bg-secondary">Photoshop</span>
+            <hr>
+            <p>
+                <a href="URL_DEL_VIDEO_DEMO_EN_YOUTUBE" target="_blank" class="btn btn-outline-primary me-2"><i class="fab fa-youtube"></i> Ver Demo</a>
+                <a href="URL_DEL_REPOSITORIO_GITHUB" target="_blank" class="btn btn-outline-dark"><i class="fab fa-github"></i> Código Fuente</a>
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- js -->
     <script src="js/bootstrap.bundle.min.js"></script>
     
