@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>🎰 Slot 3x3 Animada</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      text-align: center;
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    h1 { margin-bottom: 10px; font-size: 2.5em; text-shadow: 0 0 10px gold, 0 0 20px orange; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      grid-template-rows: repeat(3, 100px);
+      gap: 10px;
+      margin: 20px auto;
+    }
+    .cell {
+      width: 100px;
+      height: 100px;
+      border-radius: 15px;
+      border: 3px solid gold;
+      background: #111;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2em;
+      box-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
+      transition: background 0.3s, box-shadow 0.3s;
+    }
+    .cell.win {
+      background: #f39c12;
+      animation: glow 0.8s infinite alternate;
+    }
+    @keyframes glow {
+      from { box-shadow: 0 0 10px #fff, 0 0 20px #f39c12, 0 0 30px orange; }
+      to   { box-shadow: 0 0 20px #fff, 0 0 40px #f39c12, 0 0 60px orange; }
+    }
+    .controls { margin-top: 15px; }
+    input {
+      width: 60px; text-align: center; padding: 5px; font-size: 1em;
+      border-radius: 6px; border: none;
+    }
+    button {
+      padding: 12px 25px; font-size: 1.3em; margin-left: 10px; cursor: pointer;
+      border: none; border-radius: 8px;
+      background: linear-gradient(135deg, gold, orange);
+      color: #000; box-shadow: 0 0 10px gold, 0 0 20px orange;
+      transition: transform 0.2s;
+    }
+    button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+    #result, #balance { margin-top: 15px; font-size: 1.3em; text-shadow: 0 0 10px #fff; }
+  </style>
+</head>
+<body>
+  <h1>🎰 Slot 3x3 Deluxe</h1>
+  <p id="balance">Saldo: 150 €</p>
+
+  <div class="grid" id="grid">
+    <div class="cell"></div><div class="cell"></div><div class="cell"></div>
+    <div class="cell"></div><div class="cell"></div><div class="cell"></div>
+    <div class="cell"></div><div class="cell"></div><div class="cell"></div>
+  </div>
+
+  <div class="controls">
+    <label>Apuesta: </label>
+    <input type="number" id="bet" value="5" min="1" max="10"> €
+    <button id="spinButton" onclick="spin()">GIRAR</button>
+  </div>
+
+  <p id="result"></p>
+
+  <script>
+    const symbols = ["🍒", "🍋", "🍉", "⭐", "🍇", "🔔", "💎"];
+    const grid = document.querySelectorAll(".cell");
+    const resultText = document.getElementById("result");
+    const balanceText = document.getElementById("balance");
+    const spinButton = document.getElementById("spinButton");
+
+    let balance = 150;
+
+    function spin() {
+      let bet = parseInt(document.getElementById("bet").value);
+      if (bet > balance) {
+        resultText.innerText = "⚠️ No tienes saldo suficiente.";
+        return;
+      }
+
+      balance -= bet;
+      updateBalance();
+
+      resultText.innerText = "Girando... 🎲";
+      spinButton.disabled = true; // bloqueamos el botón
+
+      // animación: cambiar símbolos rápido durante 1.5s
+      let spinInterval = setInterval(() => {
+        grid.forEach(cell => {
+          cell.innerText = symbols[Math.floor(Math.random() * symbols.length)];
+        });
+      }, 100);
+
+      setTimeout(() => {
+        clearInterval(spinInterval);
+        checkWin(bet);
+        spinButton.disabled = false; // desbloqueamos el botón
+      }, 1500);
+    }
+
+    function checkWin(bet) {
+  let cells = Array.from(grid).map(cell => cell.innerText);
+
+  // 1️⃣ eliminamos todas las clases win antes de comprobar
+  grid.forEach(cell => cell.classList.remove("win"));
+
+  let winLines = [
+    [0,1,2],[3,4,5],[6,7,8], // filas
+    [0,3,6],[1,4,7],[2,5,8], // columnas
+    [0,4,8],[2,4,6]          // diagonales
+  ];
+
+  let won = false;
+  let winnings = 0;
+
+  // 2️⃣ recorremos las líneas ganadoras
+  winLines.forEach(line => {
+    let [a,b,c] = line;
+    if (cells[a] === cells[b] && cells[b] === cells[c]) {
+      grid[a].classList.add("win");
+      grid[b].classList.add("win");
+      grid[c].classList.add("win");
+      won = true;
+      winnings += bet * 3;
+    }
+  });
+
+  // 3️⃣ mostramos el resultado
+  if (won) {
+    balance += winnings;
+    resultText.innerText = `🎉 ¡GANASTE ${winnings}€! 🎉`;
+  } else {
+    resultText.innerText = "😢 Intenta otra vez";
+  }
+
+  updateBalance();
+}
+
+
+    function updateBalance() {
+      balanceText.innerText = `Saldo: ${balance} €`;
+    }
+  </script>
+</body>
+</html>

@@ -13,3 +13,4 @@ const observer = new IntersectionObserver((entries) => {
   animatedFills.forEach(card => {
     observer.observe(card);
   });
+
