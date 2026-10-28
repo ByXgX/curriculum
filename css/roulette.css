@@ -1,0 +1,96 @@
+ body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0f172a;
+      color: #f8fafc;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    h1 {
+      margin-bottom: 5px;
+      color: #38bdf8;
+      text-shadow: 0 0 10px rgba(56, 189, 248, 0.4);
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      background: #1e293b;
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+      border: 1px solid #334155;
+    }
+
+    .wheel-container {
+      position: relative;
+      width: 340px;
+      height: 340px;
+    }
+
+    /* Flecha superior que indica el número ganador */
+    .pointer {
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 0;
+      border-left: 12px solid transparent;
+      border-right: 12px solid transparent;
+      border-top: 24px solid #f43f5e;
+      z-index: 10;
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
+    }
+
+    canvas {
+      border-radius: 50%;
+      box-shadow: 0 0 15px rgba(0,0,0,0.6);
+    }
+
+    .controls {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    input, select {
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #475569;
+      background: #0f172a;
+      color: #fff;
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      background: linear-gradient(135deg, #38bdf8, #818cf8);
+      color: #fff;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(56, 189, 248, 0.3);
+      transition: transform 0.1s, opacity 0.2s;
+    }
+
+    button:hover { transform: translateY(-2px); }
+    button:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
+
+    #info {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-top: 5px;
+    }
+
+    .win { color: #4ade80; }
+    .lose { color: #f87171; }

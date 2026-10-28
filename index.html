@@ -1,499 +1,138 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>Guillermo Palmero Fiz</title>
-    <link rel="stylesheet" href="css/styles.css">
-
-    <!-- booststrap5 -->
-
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-
-    <!-- font awesome -->
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Guillermo Palmero – Junior Full-Stack, Web & Unity Developer</title>
+<meta name="description" content="Junior Full-Stack, Web and Unity developer with three Spanish higher degrees (Web, Multiplatform Apps, Game Dev & 3D). Based on the Gold Coast, open to agency roles.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
-    
+<header class="bar">
+  <div class="wrap">
+    <a class="logo" href="#top">Guillermo Palmero</a>
+    <nav aria-label="Main">
+      <a class="hide-s" href="#about">About</a>
+      <a class="hide-s" href="#stack">Stack</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <button class="icon-btn" id="theme" type="button" aria-label="Toggle light and dark mode">
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
 
-    <nav class="navbar navbar-expand-lg fixed-top navbar-scroll shadow-0" style="background-color: #ffede7;">
-        <div class="container">
-          <a class="navbar-brand" href="#">Logo</a>
-          <button class="navbar-toggler ps-0" type="button" data-mdb-collapse-init data-mdb-target="#navbarExample01"
-            aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="d-flex justify-content-start align-items-center">
-              <i class="fas fa-bars"></i>
-            </span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarExample01">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item active">
-                <a class="nav-link px-3" href="#!">Apartado</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link px-3" href="#!">Apartado</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link px-3" href="#!">Apartado</a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link px-3" href="#!">Apartado</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link px-3" href="#!">Apartado</a>
-              </li>
-            </ul>
-      
-            <ul class="navbar-nav flex-row">
-              <li class="nav-item">
-                <a class="nav-link pe-3" href="#!">
-                  <i class="fab fa-youtube"></i>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link px-3" href="#!">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link ps-3" href="#!">
-                  <i class="fab fa-instagram"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
-      <header>
-        <div class="overlay"></div>
-        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-          <source src="https://cdn.coverr.co/videos/coverr-cinematic-snowy-mountains-7615/720p.mp4" type="video/mp4">
-        </video>
-      
-        <!-- The header content -->
-        <div class="container h-100">
-          <div class="d-flex h-100 text-center align-items-center">
-            <div class="w-100 text-white">
-              <h1 class="display-3">Guillermo Palmero Fiz</h1>
-              <p class="lead mb-0">Full-Stack & videogame developer</p>
-            </div>
-          </div>
-        </div>
-      </header>
-      
-      <!-- proyects -->
-
-      <div class="container-fluid py-5">
-        <div class="row justify-content-center text-center">
-          <div class="col-md-8">
-            <h2 class="display-3 mb-4">About me</h2>
-            <hr class="custom-divider">
-          </div>
-        </div>
-      </div>
-
-      <!--
-      <div class="container mt-5">
-        <h2>Mis Habilidades en Programación</h2>
-        <p class="lead">Estos son los lenguajes que manejo, con mis favoritos destacados.</p>
-        <div class="row row-cols-1 row-cols-md-3 g-3">
-          <div class="col">
-            <div class="card shadow-sm h-100 favorite-card">
-              <div class="card-body text-center py-4">
-                <i class="bi bi-code-slash display-4 mb-2" style="color: rgb(26, 28, 148);"></i>
-                <h6 class="card-title fw-bold mb-0">Python <i class="fas fa-star text-warning ms-2"></i></h6>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm h-100 favorite-card">
-              <div class="card-body text-center py-4">
-                <i class="bi bi-braces display-4 mb-2" style="color: rgb(26, 28, 148);"></i>
-                <h6 class="card-title fw-bold mb-0">JavaScript <i class="fas fa-star text-warning ms-2"></i></h6>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm h-100">
-              <div class="card-body text-center py-4">
-                <i class="bi bi-file-earmark-code display-4 mb-2"></i>
-                <h6 class="card-title fw-bold mb-0">HTML</h6>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm h-100">
-              <div class="card-body text-center py-4">
-                <i class="bi bi-brush display-4 mb-2"></i>
-                <h6 class="card-title fw-bold mb-0">CSS</h6>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      -->
-      
-      <div class="container mb-5">
-        <div class="row">
-          <div class="col-6">
-            <h2 class="mb-3">Know me!</h2>
-            <p class="lead">I am a passionate developer with a strong inclination towards creating interactive and visual experiences.
-              I specialize in bringing code to life through video game development and building intuitive mobile applications with Flutter.
-              You can explore some of my projects in the corresponding section. I also enjoy sharing my learning journey in video game development, Flutter, and 3D modeling/animation with the community.
-              Feel free to connect with me on [Your LinkedIn] and [Your Instagram] where I share related content.
-              I am currently open to professional opportunities where I can contribute my skills, learn, and grow. 
-              If you have an interesting proposal that aligns with my experience, please don't hesitate to contact me!
-
-            </p>
-          </div>
-
-          <div class="col-6">
-            <h2 class="mb-3">My Skills</h2>
-            <div class="row row-cols-1 row-cols-md-3 g-3">
-              <div class="col">
-                <div class="card card-skills shadow-sm h-100 favorite-card animated-fill">
-                  <div class="card-body text-center py-4">
-                    <i class="fab fa-html5 display-4 mb-2" style="color: #E34F26;"></i> <h6 class="card-title fw-bold mb-0"><i class="fas fa-star text-warning ms-2"></i> HTML</h6>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col">
-                <div class="card card-skills shadow-sm h-100 favorite-card animated-fill">
-                  <div class="card-body text-center py-4">
-                    <i class="fab fa-css3-alt display-4 mb-2" style="color: #1572B6;"></i><h6 class="card-title fw-bold mb-0"><i class="fas fa-star text-warning ms-2"></i> CSS</h6>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col">
-                <div class="card card-skills shadow-sm h-100 favorite-card animated-fill">
-                  <div class="card-body text-center py-4">
-                    
-                    <i class="devicon-unity-plain display-4 mb-2"></i><h6 class="card-title fw-bold mb-0"><i class="fas fa-star text-warning ms-2"></i> Unity <small class="text-muted">(C#)</small></h6>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col">
-                <div class="card card-skills shadow-sm h-100 favorite-card animated-fill">
-                  <div class="card-body text-center py-4">
-                    <i class="devicon-maya-plain colored display-4 mb-2"></i><h6 class="card-title fw-bold mb-0"><i class="fas fa-star text-warning ms-2"></i> 3D Maya</h6>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col">
-                <div class="card card-skills shadow-sm h-100">
-                  <div class="card-body text-center py-4">
-                    <i class="devicon-javascript-plain colored display-4 mb-2"></i><h6 class="card-title fw-bold mb-0"> Javascript</h6>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="col">
-                <div class="card card-skills shadow-sm h-100">
-                  <div class="card-body text-center py-4">
-                    <i class="devicon-mysql-plain-wordmark colored display-4 mb-2"></i><h6 class="card-title fw-bold mb-0"> MySQL</h6>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col">
-                <div class="card card-skills shadow-sm h-100">
-                  <div class="card-body text-center py-4">
-                    <i class="devicon-mongodb-plain-wordmark colored display-4 mb-2"></i> 
-                    <h6 class="card-title fw-bold mb-0"> MongoDB</h6>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col">
-                <div class="card card-skills shadow-sm h-100">
-                  <div class="card-body text-center py-4">
-                    <i class="devicon-unity-original colored display-4 mb-2"></i> 
-                    <h6 class="card-title fw-bold mb-0"> Excel <small class="text-muted">(VBA)</small></h6>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col">
-                <div class="card card-skills shadow-sm h-100">
-                  <div class="card-body text-center py-4">
-                    <i class="devicon-python-plain colored display-4 mb-2"></i> 
-                    <h6 class="card-title fw-bold mb-0"> Python</h6>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col">
-                <div class="card card-skills shadow-sm h-100">
-                  <div class="card-body text-center py-4">
-                    <i class="devicon-blender-original colored display-4 mb-2"></i> 
-                    <h6 class="card-title fw-bold mb-0"> Blender</h6>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col">
-                <div class="card card-skills shadow-sm h-100">
-                  <div class="card-body text-center py-4">
-                    <i class="devicon-photoshop-plain colored display-4 mb-2"></i> 
-                    <h6 class="card-title fw-bold mb-0"> Photoshop</h6>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col">
-                <div class="card card-skills shadow-sm h-100">
-                  <div class="card-body text-center py-4">
-                    <i class="devicon-aftereffects-plain colored display-4 mb-2"></i> 
-                    <h6 class="card-title fw-bold mb-0"> After Effects</h6>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <!-- proyectos -->
-
-      <div class="container mt-5">
-        <h2 class="myProyects-title">My Projects</h2><hr class="custom-divider mb-4">
-        <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner rounded">
-            <div class="carousel-item active bg-dark text-white">
-              <img src="images/RoonvaRun.png" class="d-block w-100 object-fit-cover" alt="Proyecto 1">
-              <div class="carousel-caption d-none d-md-block text-start p-4">
-                <div class="carousel-caption d-none d-md-block text-start p-4">
-                  <h5 class="mt-0">Roonva Run</h5>
-                  <div class="project-tags mb-3"> <span class="project-tag tag-unity">Unity Game</span>
-                    <span class="project-tag tag-freelancer">Freelancer</span>
-                  </div>
-                  <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#projectModal1">Ver Proyecto</button>
-                </div>
-              </div>
-            </div>
-            
-            <div class="carousel-item bg-dark text-white">
-              <img src="images/OtroJuego.png" class="d-block w-100 object-fit-cover" alt="Otro Juego">
-              <div class="carousel-caption d-none d-md-block text-start p-4">
-                <h5 class="mt-0">ArtStation</h5> 
-                <div class="project-tags mb-3">
-                  <span class="project-tag tag-unity">Maya 3D</span>
-                </div>
-                <a href="https://www.artstation.com/guilleeee"><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal">Watch</button></a>
-              </div>
-            </div>
-
-            <div class="carousel-item bg-dark text-white">
-              <img src="images/OtroJuego.png" class="d-block w-100 object-fit-cover" alt="Otro Juego">
-              <div class="carousel-caption d-none d-md-block text-start p-4">
-                <h5 class="mt-0">Space Invaders Clone</h5> 
-                <div class="project-tags mb-3">
-                  <span class="project-tag tag-unity">Unity 2D</span> <span class="project-tag tag-csharp">C#</span>
-                </div>
-                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#projectModal2"> Ver Proyecto</button>
-              </div>
-            </div>
-            
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-          </button>
-          <div class="carousel-indicators">
-              <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              </div>
-          </div>
-        </div>
-
-      <!-- hobbies  -->
-      <div class="container-fluid mt-4">
-        <div class="row hobbies-section">
-            <div class="col-md-3 hobby-item">
-                <span class="hobby-icon">🃏</span>
-                <p class="hobby-text-title">Magic</p>
-                <p class="hobby-text-description">Disfruto creando ilusiones y sorprendiendo a la gente.</p>
-            </div>
-            <div class="col-md-3 hobby-item">
-                <span class="hobby-icon">🥊</span>
-                <p class="hobby-text-title">Boxing</p>
-                <p class="hobby-text-description">Me ayuda a mantenerme en forma física y mentalmente.</p>
-            </div>
-            <div class="col-md-3 hobby-item">
-                <span class="hobby-icon">✈️</span>
-                <p class="hobby-text-title">Trips</p>
-                <p class="hobby-text-description">Explorar nuevos lugares y culturas es fascinante.</p>
-            </div>
-            <div class="col-md-3 hobby-item">
-                <span class="hobby-icon">🎮</span>
-                <p class="hobby-text-title">Videogames</p>
-                <p class="hobby-text-description">Me relaja y me permite vivir aventuras virtuales.</p>
-            </div>
-        </div>
-    </div>
-
-    <!--  footer -->
-    <footer class="text-center bg-body-tertiary">
-      <!-- Grid container -->
-      <div class="container pt-4">
-        <!-- Section: Social media -->
-        <section class="mb-4">
-          <!-- Facebook -->
-          <a
-            data-mdb-ripple-init
-            class="btn btn-link btn-floating btn-lg text-body m-1"
-            href="#!"
-            role="button"
-            data-mdb-ripple-color="dark"
-            ><i class="fab fa-facebook-f"></i
-          ></a>
-    
-          <!-- Twitter -->
-          <a
-            data-mdb-ripple-init
-            class="btn btn-link btn-floating btn-lg text-body m-1"
-            href="#!"
-            role="button"
-            data-mdb-ripple-color="dark"
-            ><i class="fab fa-twitter"></i
-          ></a>
-    
-          <!-- Google -->
-          <a
-            data-mdb-ripple-init
-            class="btn btn-link btn-floating btn-lg text-body m-1"
-            href="#!"
-            role="button"
-            data-mdb-ripple-color="dark"
-            ><i class="fab fa-google"></i
-          ></a>
-    
-          <!-- Instagram -->
-          <a
-            data-mdb-ripple-init
-            class="btn btn-link btn-floating btn-lg text-body m-1"
-            href="#!"
-            role="button"
-            data-mdb-ripple-color="dark"
-            ><i class="fab fa-instagram"></i
-          ></a>
-    
-          <!-- Linkedin -->
-          <a
-            data-mdb-ripple-init
-            class="btn btn-link btn-floating btn-lg text-body m-1"
-            href="#!"
-            role="button"
-            data-mdb-ripple-color="dark"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-          <!-- Github -->
-          <a
-            data-mdb-ripple-init
-            class="btn btn-link btn-floating btn-lg text-body m-1"
-            href="#!"
-            role="button"
-            data-mdb-ripple-color="dark"
-            ><i class="fab fa-github"></i
-          ></a>
-        </section>
-        <!-- Section: Social media -->
-      </div>
-      <!-- Grid container -->
-    
-      <!-- Copyright -->
-      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
-        © 2025 Guillermo Palmero Fiz
-      </div>
-      <!-- Copyright -->
-    </footer>
-
-
-    <!-- Proyectos flotantes -->
-
-    <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModal1Label" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="projectModal1Label">Roonva Run</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <p></p>
-            <p><strong>Roles:</strong> 3D model, Programmer, .</p>
-            <p><strong>Características:</strong> Búsqueda avanzada, filtros por ubicación y servicios, sistema de reservas, perfil de usuario, integración con mapas.</p>
-            <h6>Tecnologías Utilizadas:</h6>
-            <span class="badge bg-primary me-1">Unity</span>
-            <span class="badge bg-primary me-1">Maya</span>
-            <span class="badge bg-primary me-1">Substance</span>
-            <span class="badge bg-primary me-1">Photoshop</span>
-            <hr>
-            <p>
-              <a href="URL_DEL_PROYECTO_EN_VIVO" target="_blank" class="btn btn-outline-primary me-2"><i class="fas fa-external-link-alt"></i> Ver en Vivo</a>
-              <a href="URL_DEL_REPOSITORIO_GITHUB" target="_blank" class="btn btn-outline-dark"><i class="fab fa-github"></i> Código Fuente</a>
-            </p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-          </div>
-        </div>
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div class="rise">
+      <span class="badge"><span class="dot"></span>Available for junior roles on the Gold Coast</span>
+      <h1>Junior Full-Stack, Web and Unity Developer</h1>
+      <p class="sub">I build responsive websites, cross-platform apps and playable game mechanics, and I pick up a new stack fast.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#projects">View Projects</a>
+        <a class="btn btn-ghost" href="#contact">Contact Me</a>
       </div>
     </div>
-    <div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="projectModal2Label" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="projectModal2Label">Fantasy RPG Prototype</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <p>Desarrollo de un prototipo de juego RPG de fantasía en 3D. Este proyecto se centró en la implementación de mecánicas de combate por turnos, sistema de inventario, navegación de personajes y un entorno interactivo.</p>
-            <p><strong>Tecnologías Clave:</strong> Desarrollo en **Unity 3D** utilizando scripts en **C#** para toda la lógica del juego. Se utilizó **Blender** para el modelado 3D de personajes y entornos, y **Photoshop** para las texturas.</p>
-            <p><strong>Características:</strong> Combate por turnos, sistema de habilidades y equipamiento, inteligencia artificial básica para enemigos, sistema de guardado/carga de partida.</p>
-            <h6>Tecnologías Utilizadas:</h6>
-            <span class="badge bg-success me-1">Unity 3D</span>
-            <span class="badge bg-info me-1">C#</span>
-            <span class="badge bg-secondary me-1">Blender</span>
-            <span class="badge bg-secondary">Photoshop</span>
-            <hr>
-            <p>
-                <a href="URL_DEL_VIDEO_DEMO_EN_YOUTUBE" target="_blank" class="btn btn-outline-primary me-2"><i class="fab fa-youtube"></i> Ver Demo</a>
-                <a href="URL_DEL_REPOSITORIO_GITHUB" target="_blank" class="btn btn-outline-dark"><i class="fab fa-github"></i> Código Fuente</a>
-            </p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-          </div>
-        </div>
+    <div class="deck rise" style="animation-delay:.15s">
+      <div class="tabs" role="tablist" aria-label="My three degrees">
+        <button role="tab" aria-selected="true" data-i="0">Web</button>
+        <button role="tab" aria-selected="false" data-i="1">Apps</button>
+        <button role="tab" aria-selected="false" data-i="2">Games &amp; 3D</button>
+      </div>
+      <div class="panel" role="tabpanel" id="deck-panel" aria-live="polite"></div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <h2>About me</h2>
+    <p class="lead story">I hold three Higher National Diplomas from Spain (Grado Superior), which means I can work across the whole product, from the page a customer sees to the app in their pocket and the interactive experience around it.</p>
+    <div class="about">
+      <div class="card"><h3>Web Application Development</h3><p>Responsive front ends, server-side logic and databases. I build with HTML5, CSS3, JavaScript, Bootstrap 5, Node.js and Laravel.</p></div>
+      <div class="card"><h3>Multiplatform Application Development</h3><p>Mobile and desktop software in Flutter, Python and C#, including apps with database integration and online store interfaces.</p></div>
+      <div class="card"><h3>Video Game Development, 3D Modelling and Animation</h3><p>2D and 3D mechanics in Unity with C#, plus modelling and animation, so I understand both the engineering and the art pipeline.</p></div>
+    </div>
+    <p class="lead" style="margin:2rem 0 0">Because I have worked in three different toolchains, I adapt quickly: new framework, new language or a client's existing codebase, I get productive in days and ask good questions early. I write clean, readable code and care about how things feel to use.</p>
+  </div>
+</section>
+
+<section id="stack">
+  <div class="wrap">
+    <h2>Tech stack</h2>
+    <p class="lead">The tools I use day to day, grouped by where I use them.</p>
+    <div class="stack">
+      <div class="card"><h3>Web</h3><ul class="chips"><li class="chip">HTML5</li><li class="chip">CSS3</li><li class="chip">JavaScript</li><li class="chip">Bootstrap 5</li><li class="chip">Node.js</li><li class="chip">Laravel</li><li class="chip">MySQL</li></ul></div>
+      <div class="card"><h3>Mobile and software</h3><ul class="chips"><li class="chip">Flutter</li><li class="chip">Dart</li><li class="chip">Python</li><li class="chip">C#</li></ul></div>
+      <div class="card"><h3>Game dev and 3D</h3><ul class="chips"><li class="chip">Unity Engine</li><li class="chip">C#</li><li class="chip">Maya</li><li class="chip">Blender</li></ul></div>
+      <div class="card"><h3>Tools</h3><ul class="chips"><li class="chip">Git and GitHub</li><li class="chip">Netlify</li><li class="chip">Photoshop</li><li class="chip">After Effects</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <h2>Projects</h2>
+    <p class="lead">A mix of client-style web work, apps and games. Replace the # links with your live demos and repositories.</p>
+    <div class="projects">
+      <article class="card proj">
+        <div class="thumb" style="background:linear-gradient(135deg,#0F2430,#007C85)">Loveday Mechanical</div>
+        <div class="body"><h3>Mechanic workshop landing page</h3><p>Single-page responsive site for a local Gold Coast workshop: services, opening hours, map and a clear call-to-call button.</p>
+        <ul class="chips"><li class="chip">HTML5</li><li class="chip">CSS3</li><li class="chip">JavaScript</li><li class="chip">Netlify</li></ul>
+        <div class="actions"><a class="btn btn-primary" href="#" target="_blank" rel="noopener">Live Demo</a><a class="btn btn-ghost" href="#" target="_blank" rel="noopener">GitHub</a></div></div>
+      </article>
+      <article class="card proj">
+        <div class="thumb" style="background:linear-gradient(135deg,#E9522F,#8A2D6B)">New Lengths Hair Salon</div>
+        <div class="body"><h3>Hair salon landing page</h3><p>Mobile-first brand page with a service menu, gallery and booking call-to-action, built to load fast on phones.</p>
+        <ul class="chips"><li class="chip">HTML5</li><li class="chip">CSS3</li><li class="chip">Bootstrap 5</li><li class="chip">Netlify</li></ul>
+        <div class="actions"><a class="btn btn-primary" href="#" target="_blank" rel="noopener">Live Demo</a><a class="btn btn-ghost" href="#" target="_blank" rel="noopener">GitHub</a></div></div>
+      </article>
+      <article class="card proj">
+        <div class="thumb" style="background:linear-gradient(135deg,#12262F,#3CC7CF)">Roonva Run</div>
+        <div class="body"><h3>Unity runner game</h3><p>Freelance 2D/3D game: I programmed the gameplay in C# and modelled the assets in Maya, textured with Substance and Photoshop.</p>
+        <ul class="chips"><li class="chip">Unity</li><li class="chip">C#</li><li class="chip">Maya</li><li class="chip">Substance</li></ul>
+        <div class="actions"><a class="btn btn-primary" href="#" target="_blank" rel="noopener">Live Demo</a><a class="btn btn-ghost" href="#" target="_blank" rel="noopener">GitHub</a></div></div>
+      </article>
+      <article class="card proj">
+        <div class="thumb" style="background:linear-gradient(135deg,#1B5E8C,#1FB36B)">WanderMark</div>
+        <div class="body"><h3>Offline travel tracker</h3><p>Flutter mobile app to log trips and places without a connection, with local database storage and a clean, map-style interface.</p>
+        <ul class="chips"><li class="chip">Flutter</li><li class="chip">Dart</li><li class="chip">SQLite</li></ul>
+        <div class="actions"><a class="btn btn-primary" href="#" target="_blank" rel="noopener">Live Demo</a><a class="btn btn-ghost" href="#" target="_blank" rel="noopener">GitHub</a></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap contact">
+    <div>
+      <h2>Contact me</h2>
+      <p class="lead" style="margin-bottom:0">Hiring for a junior or graduate role? Send me a message and I will reply within a day.</p>
+      <div class="links">
+        <a href="mailto:guillep2002@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>guillep2002@gmail.com</a>
+        <a href="https://github.com/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.8c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.3-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .4.3.7.9.7 1.8v2.7c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg>GitHub</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.5 3A1.8 1.8 0 1 0 4.5 6.6 1.8 1.8 0 0 0 4.5 3zM3 8.5h3V21H3zM9 8.5h2.9v1.7c.5-.9 1.7-2 3.7-2 3.4 0 4.4 2.2 4.4 5.3V21h-3v-6.6c0-1.6-.1-3.3-2-3.3s-2.1 1.5-2.1 3.2V21H9z"/></svg>LinkedIn</a>
       </div>
     </div>
+    <form id="form" class="card" novalidate>
+      <label>Name<input id="n" name="name" autocomplete="name" required></label>
+      <label>Email<input id="e" name="email" type="email" autocomplete="email" required></label>
+      <label>Message<textarea id="m" name="message" required></textarea></label>
+      <button class="btn btn-primary" type="submit">Send message</button>
+      <p id="status" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
 
-    <!-- js -->
-    <script src="js/bootstrap.bundle.min.js"></script>
-    
-    <!-- parallax -->
+<footer><div class="wrap">© 2026 Guillermo Palmero. Built by hand with HTML, CSS and JavaScript.</div></footer>
 
-    <script src="js/javascript.js"></script>
-
+<script src="js/javascript.js"></script>
 </body>
-
-
-
 </html>

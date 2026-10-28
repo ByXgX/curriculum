@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>🎡 Ruleta Europea JS</title>
+
+  <link rel="stylesheet" href="css/roulette.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>🎡 Ruleta Europea</h1>
+    <div id="balance">Saldo: 100 €</div>
+
+    <div class="wheel-container">
+      <div class="pointer"></div>
+      <canvas id="wheel" width="340" height="340"></canvas>
+    </div>
+
+    <div class="controls">
+      <label for="betType">Apuesta a:</label>
+      <select id="betType">
+        <option value="red">Rojo (1:1)</option>
+        <option value="black">Negro (1:1)</option>
+        <option value="even">Par (1:1)</option>
+        <option value="odd">Impar (1:1)</option>
+        <option value="0">Número 0 (35:1)</option>
+      </select>
+
+      <input type="number" id="betAmount" value="10" min="1" max="100" style="width: 60px;"> €
+      <button id="spinBtn" onclick="spinWheel()">GIRAR</button>
+    </div>
+
+    <div id="info">¡Haz tu apuesta y gira!</div>
+  </div>
+
+  <script src="/js/roulette.js"></script>
+</body>
+</html>
