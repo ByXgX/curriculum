@@ -9,6 +9,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/extras.css">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Guillermo Palmero – Junior Full-Stack, Web & Unity Developer">
+<meta property="og:description" content="Web, apps and game development. Three Spanish higher degrees, based on the Gold Coast.">
+<meta property="og:url" content="https://byxgx.github.io/curriculum/">
+<meta property="og:image" content="https://byxgx.github.io/curriculum/images/portfolio/og-preview.jpg">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
 <header class="bar">
@@ -37,6 +44,7 @@
       <div class="cta">
         <a class="btn btn-primary" href="#projects">View Projects</a>
         <a class="btn btn-ghost" href="#contact">Contact Me</a>
+        <a class="btn btn-ghost" href="cv/Guillermo-Palmero-CV.pdf" download>Download CV</a>
       </div>
     </div>
     <div class="deck rise" style="animation-delay:.15s">
@@ -53,7 +61,7 @@
 <section id="about">
   <div class="wrap">
     <h2>About me</h2>
-    <p class="lead story">I hold three Higher National Diplomas from Spain (Grado Superior), which means I can work across the whole product, from the page a customer sees to the app in their pocket and the interactive experience around it.</p>
+    <div class="about-intro"><img class="portrait" src="images/portfolio/profile.jpg" alt="Portrait of Guillermo Palmero" width="220" height="220"><p class="lead story">I hold three Higher National Diplomas from Spain (Grado Superior), which means I can work across the whole product, from the page a customer sees to the app in their pocket and the interactive experience around it.</p></div>
     <div class="about">
       <div class="card"><h3>Web Application Development</h3><p>Responsive front ends, server-side logic and databases. I build with HTML5, CSS3, JavaScript, Bootstrap 5, Node.js and Laravel.</p></div>
       <div class="card"><h3>Multiplatform Application Development</h3><p>Mobile and desktop software in Flutter, Python and C#, including apps with database integration and online store interfaces.</p></div>
@@ -79,25 +87,31 @@
 <section id="projects">
   <div class="wrap">
     <h2>Projects</h2>
-    <p class="lead">A mix of client-style web work, apps and games. Replace the # links with your live demos and repositories.</p>
+    <p class="lead">Demo sites built for local businesses, a Unity game and a selection of my 3D art.</p>
     <div class="projects">
-      <article class="card proj">
-        <div class="thumb" style="background:linear-gradient(135deg,#0F2430,#007C85)">Loveday Mechanical</div>
-        <div class="body"><h3>Mechanic workshop landing page</h3><p>Single-page responsive site for a local Gold Coast workshop: services, opening hours, map and a clear call-to-call button.</p>
-        <ul class="chips"><li class="chip">HTML5</li><li class="chip">CSS3</li><li class="chip">JavaScript</li><li class="chip">Netlify</li></ul>
-        <div class="actions"><a class="btn btn-primary" href="#" target="_blank" rel="noopener">Live Demo</a><a class="btn btn-ghost" href="https://github.com/ByXgX/loveday-mechanical-demo" target="_blank" rel="noopener">GitHub</a></div></div>
-      </article>
-      <article class="card proj">
-        <div class="thumb" style="background:linear-gradient(135deg,#E9522F,#8A2D6B)">New Lengths Hair Salon</div>
-        <div class="body"><h3>Hair salon landing page</h3><p>Mobile-first brand page with a service menu, gallery and booking call-to-action, built to load fast on phones.</p>
-        <ul class="chips"><li class="chip">HTML5</li><li class="chip">CSS3</li><li class="chip">Bootstrap 5</li><li class="chip">Netlify</li></ul>
-        <div class="actions"><a class="btn btn-primary" href="https://newlengths-nobbybeach.netlify.app" target="_blank" rel="noopener">Live Demo</a><a class="btn btn-ghost" href="#" target="_blank" rel="noopener">GitHub</a></div></div>
-      </article>
-      <article class="card proj">
-        <div class="thumb" style="background:linear-gradient(135deg,#12262F,#3CC7CF)">Roonva Run</div>
+      <article class="card proj featured">
+        <a class="thumb" href="https://youtu.be/4eCDpfUgiYY" target="_blank" rel="noopener"><img src="images/portfolio/roonva.jpg" alt="Roonva Run game screenshot" loading="lazy" width="1280" height="720"></a>
         <div class="body"><h3>Unity runner game</h3><p>Freelance 2D/3D game: I programmed the gameplay in C# and modelled the assets in Maya, textured with Substance and Photoshop.</p>
         <ul class="chips"><li class="chip">Unity</li><li class="chip">C#</li><li class="chip">Maya</li><li class="chip">Substance</li></ul>
-        <div class="actions"><a class="btn btn-primary" href="https://youtu.be/4eCDpfUgiYY" target="_blank" rel="noopener">Trailer</a><a class="btn btn-ghost" href="#" target="_blank" rel="noopener">GitHub</a></div></div>
+        <div class="actions"><a class="btn btn-primary" href="https://youtu.be/4eCDpfUgiYY" target="_blank" rel="noopener">Trailer</a></div></div>
+      </article>
+      <article class="card proj">
+        <a class="thumb" href="https://github.com/ByXgX/loveday-mechanical-demo" target="_blank" rel="noopener"><img src="images/portfolio/loveday.jpg" alt="Loveday Mechanical landing page" loading="lazy" width="1280" height="720"></a>
+        <div class="body"><h3>Mechanic workshop landing page</h3><p>Single-page responsive site for a local Gold Coast workshop: services, opening hours, map and a clear call-to-call button.</p>
+        <ul class="chips"><li class="chip">HTML5</li><li class="chip">CSS3</li><li class="chip">JavaScript</li><li class="chip">Netlify</li></ul>
+        <div class="actions"><a class="btn btn-primary" href="https://github.com/ByXgX/loveday-mechanical-demo" target="_blank" rel="noopener">GitHub</a></div></div>
+      </article>
+      <article class="card proj">
+        <a class="thumb" href="https://newlengths-nobbybeach.netlify.app" target="_blank" rel="noopener"><img src="images/portfolio/newlengths.jpg" alt="New Lengths Hair Salon landing page" loading="lazy" width="1280" height="720"></a>
+        <div class="body"><h3>Hair salon landing page</h3><p>Mobile-first brand page with a service menu, gallery and booking call-to-action, built to load fast on phones.</p>
+        <ul class="chips"><li class="chip">HTML5</li><li class="chip">CSS3</li><li class="chip">Bootstrap 5</li><li class="chip">Netlify</li></ul>
+        <div class="actions"><a class="btn btn-primary" href="https://newlengths-nobbybeach.netlify.app" target="_blank" rel="noopener">Live Demo</a></div></div>
+      </article>
+      <article class="card proj">
+        <a class="thumb" href="https://www.artstation.com/TU_USUARIO" target="_blank" rel="noopener"><img src="images/portfolio/artstation.jpg" alt="3D art preview" loading="lazy" width="1280" height="720"></a>
+        <div class="body"><h3>3D art and animation</h3><p>A selection of my 3D modelling, texturing and animation work, from game-ready assets to rendered scenes.</p>
+        <ul class="chips"><li class="chip">Maya</li><li class="chip">Blender</li><li class="chip">Substance</li><li class="chip">Photoshop</li></ul>
+        <div class="actions"><a class="btn btn-primary" href="https://www.artstation.com/TU_USUARIO" target="_blank" rel="noopener">ArtStation</a></div></div>
       </article>
     </div>
   </div>
